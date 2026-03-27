@@ -5,7 +5,6 @@ The goal of this project is to recommend the next book a user is likely to read 
 
 Although the raw data is chapter-level, the main recommendation task is framed at the **book level** because:
 - the assignment allows flexible scoping
-- book recommendation is a meaningful business problem
 - the interaction file does not include timestamps needed for stronger sequential modeling
 
 A simple continue-reading / next-chapter output is also included for users who appear to be progressing through an existing book.
