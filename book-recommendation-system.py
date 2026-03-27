@@ -28,7 +28,7 @@ MAX_CF_CANDS = 20
 MAX_POP_CANDS = 20
 MAX_NEGATIVES_PER_USER = 20
 TOP_K_EVAL = 10
-OUTPUT_DIR = '/content/reco_outputs1'
+OUTPUT_DIR = '/content/reco_outputs'
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
 start_all = time.time()
@@ -471,7 +471,7 @@ with open(report_path, 'w') as f:
         'TOP_K_EVAL': TOP_K_EVAL,
     }, indent=2))
 
-zip_path = '/content/reco_outputs1.zip'
+zip_path = '/content/reco_outputs.zip'
 with zipfile.ZipFile(zip_path, 'w', zipfile.ZIP_DEFLATED) as zf:
     for fn in os.listdir(OUTPUT_DIR):
         zf.write(os.path.join(OUTPUT_DIR, fn), arcname=fn)
