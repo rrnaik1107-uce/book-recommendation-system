@@ -116,3 +116,7 @@ The script also creates and downloads:
 
 ## Author Note
 This project was created as a data science assignment submission demonstrating recommendation-system design, ML modeling, feature engineering, and ranking evaluation.
+
+##  Author
+
+Raja Naik
